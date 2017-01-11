@@ -357,6 +357,9 @@ install(FILES
 # Install headers
 install(DIRECTORY   ${PROJECT_SOURCE_DIR}/${project_library_target_name}
         DESTINATION ${include_install_dir})
+# Install depencency cereal
+install(DIRECTORY   ${PROJECT_SOURCE_DIR}/cereal
+        DESTINATION ${include_install_dir})
 
 # Check if protobuf available
 include(cmake/protoc.cmake)
